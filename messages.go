@@ -11,10 +11,10 @@ import (
 
 	"mellium.im/sasl"
 
-	"github.com/go-pg/pg/internal"
-	"github.com/go-pg/pg/internal/pool"
-	"github.com/go-pg/pg/orm"
-	"github.com/go-pg/pg/types"
+	"github.com/GiG/pg/internal"
+	"github.com/GiG/pg/internal/pool"
+	"github.com/GiG/pg/orm"
+	"github.com/GiG/pg/types"
 )
 
 const (

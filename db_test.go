@@ -13,8 +13,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/go-pg/pg"
-	"github.com/go-pg/pg/orm"
+	"github.com/GiG/pg"
+	"github.com/GiG/pg/orm"
 )
 
 func TestGinkgo(t *testing.T) {

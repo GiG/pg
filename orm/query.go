@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-pg/pg/internal"
-	"github.com/go-pg/pg/types"
+	"github.com/GiG/pg/internal"
+	"github.com/GiG/pg/types"
 )
 
 type withQuery struct {
