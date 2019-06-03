@@ -3,7 +3,7 @@ package internal_test
 import (
 	"testing"
 
-	"github.com/GiG/pg/internal"
+	"github.com/gig/pg/internal"
 )
 
 func TestUnderscore(t *testing.T) {

@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/GiG/pg"
+	"github.com/gig/pg"
 )
 
 type Test struct {

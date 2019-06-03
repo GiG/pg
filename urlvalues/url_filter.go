@@ -3,10 +3,10 @@ package urlvalues
 import (
 	"strings"
 
-	"github.com/GiG/pg"
-	"github.com/GiG/pg/internal"
-	"github.com/GiG/pg/orm"
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg"
+	"github.com/gig/pg/internal"
+	"github.com/gig/pg/orm"
+	"github.com/gig/pg/types"
 )
 
 // URLFilter is used with Query.Apply to add WHERE clauses from the URL values:

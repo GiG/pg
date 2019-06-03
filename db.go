@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/GiG/pg/internal/pool"
-	"github.com/GiG/pg/orm"
+	"github.com/gig/pg/internal/pool"
+	"github.com/gig/pg/orm"
 )
 
 // Connect connects to a database using provided options.

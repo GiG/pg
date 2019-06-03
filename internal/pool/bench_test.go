@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GiG/pg/internal/pool"
+	"github.com/gig/pg/internal/pool"
 )
 
 func benchmarkPoolGetPut(b *testing.B, poolSize int) {

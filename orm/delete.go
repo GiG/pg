@@ -1,7 +1,7 @@
 package orm
 
 import (
-	"github.com/GiG/pg/internal"
+	"github.com/gig/pg/internal"
 )
 
 // Delete deletes a given model from the db

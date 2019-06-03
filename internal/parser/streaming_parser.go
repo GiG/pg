@@ -3,7 +3,7 @@ package parser
 import (
 	"fmt"
 
-	"github.com/GiG/pg/internal"
+	"github.com/gig/pg/internal"
 )
 
 type StreamingParser struct {

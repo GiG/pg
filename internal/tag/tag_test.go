@@ -3,7 +3,7 @@ package tag_test
 import (
 	"testing"
 
-	"github.com/GiG/pg/internal/tag"
+	"github.com/gig/pg/internal/tag"
 )
 
 var tagTests = []struct {

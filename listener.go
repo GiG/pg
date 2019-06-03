@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/GiG/pg/internal"
-	"github.com/GiG/pg/internal/pool"
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg/internal"
+	"github.com/gig/pg/internal/pool"
+	"github.com/gig/pg/types"
 )
 
 const gopgChannel = "gopg:ping"

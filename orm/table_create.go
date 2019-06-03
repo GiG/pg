@@ -3,7 +3,7 @@ package orm
 import (
 	"strconv"
 
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg/types"
 )
 
 type CreateTableOptions struct {

@@ -5,10 +5,10 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/GiG/pg/internal"
-	"github.com/GiG/pg/internal/iszero"
-	"github.com/GiG/pg/internal/tag"
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg/internal"
+	"github.com/gig/pg/internal/iszero"
+	"github.com/gig/pg/internal/tag"
+	"github.com/gig/pg/types"
 )
 
 type opCode int

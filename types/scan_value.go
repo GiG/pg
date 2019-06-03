@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/GiG/pg/internal"
+	"github.com/gig/pg/internal"
 )
 
 var valueScannerType = reflect.TypeOf((*ValueScanner)(nil)).Elem()

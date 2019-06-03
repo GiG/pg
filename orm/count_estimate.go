@@ -3,7 +3,7 @@ package orm
 import (
 	"fmt"
 
-	"github.com/GiG/pg/internal"
+	"github.com/gig/pg/internal"
 )
 
 // Placeholder that is replaced with count(*).

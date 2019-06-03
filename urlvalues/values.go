@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/GiG/pg/internal/structfilter"
+	"github.com/gig/pg/internal/structfilter"
 )
 
 type Values map[string][]string

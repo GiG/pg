@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/GiG/pg/internal/iszero"
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg/internal/iszero"
+	"github.com/gig/pg/types"
 )
 
 const (

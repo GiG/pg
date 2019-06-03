@@ -3,8 +3,8 @@ package structfilter
 import (
 	"reflect"
 
-	"github.com/GiG/pg/internal"
-	"github.com/GiG/pg/internal/tag"
+	"github.com/gig/pg/internal"
+	"github.com/gig/pg/internal/tag"
 )
 
 type Struct struct {

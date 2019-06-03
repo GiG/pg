@@ -3,7 +3,7 @@ package types
 import (
 	"time"
 
-	"github.com/GiG/pg/internal"
+	"github.com/gig/pg/internal"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GiG/pg"
+	"github.com/gig/pg"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

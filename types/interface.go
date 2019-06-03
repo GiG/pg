@@ -1,6 +1,6 @@
 package types
 
-import "github.com/GiG/pg/internal"
+import "github.com/gig/pg/internal"
 
 type ValueScanner interface {
 	ScanValue(rd Reader, n int) error

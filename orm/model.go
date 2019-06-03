@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg/types"
 )
 
 var errModelNil = errors.New("pg: Model(nil)")

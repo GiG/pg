@@ -3,8 +3,8 @@ package orm_test
 import (
 	"reflect"
 
-	"github.com/GiG/pg/orm"
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg/orm"
+	"github.com/gig/pg/types"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

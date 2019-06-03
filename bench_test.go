@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/GiG/pg"
-	"github.com/GiG/pg/orm"
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg"
+	"github.com/gig/pg/orm"
+	"github.com/gig/pg/types"
 )
 
 func benchmarkDB() *pg.DB {

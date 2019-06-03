@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/GiG/pg"
-	"github.com/GiG/pg/orm"
+	"github.com/gig/pg"
+	"github.com/gig/pg/orm"
 )
 
 type MyType struct {

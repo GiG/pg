@@ -1,6 +1,6 @@
 package types
 
-import "github.com/GiG/pg/internal/parser"
+import "github.com/gig/pg/internal/parser"
 
 func AppendJSONB(b, jsonb []byte, quote int) []byte {
 	switch quote {

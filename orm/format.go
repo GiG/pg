@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/GiG/pg/internal"
-	"github.com/GiG/pg/internal/parser"
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg/internal"
+	"github.com/gig/pg/internal/parser"
+	"github.com/gig/pg/types"
 )
 
 var defaultFmter Formatter

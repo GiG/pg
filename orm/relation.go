@@ -3,7 +3,7 @@ package orm
 import (
 	"fmt"
 
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg/types"
 )
 
 const (

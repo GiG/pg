@@ -4,7 +4,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg/types"
 )
 
 // ColumnScanner is used to scan column values.

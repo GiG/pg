@@ -1,7 +1,7 @@
 package tag
 
 import (
-	"github.com/GiG/pg/internal/parser"
+	"github.com/gig/pg/internal/parser"
 )
 
 type Tag struct {

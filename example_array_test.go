@@ -3,8 +3,8 @@ package pg_test
 import (
 	"fmt"
 
-	"github.com/GiG/pg"
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg"
+	"github.com/gig/pg/types"
 )
 
 func ExampleDB_Model_postgresArrayStructTag() {

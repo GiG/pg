@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/GiG/pg/types"
+	"github.com/gig/pg/types"
 )
 
 type sliceTableModel struct {

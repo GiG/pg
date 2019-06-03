@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/GiG/pg/internal"
-	"github.com/GiG/pg/internal/pool"
-	"github.com/GiG/pg/orm"
+	"github.com/gig/pg/internal"
+	"github.com/gig/pg/internal/pool"
+	"github.com/gig/pg/orm"
 )
 
 var errTxDone = errors.New("pg: transaction has already been committed or rolled back")

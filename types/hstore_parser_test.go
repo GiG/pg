@@ -3,7 +3,7 @@ package types
 import (
 	"testing"
 
-	"github.com/GiG/pg/internal"
+	"github.com/gig/pg/internal"
 )
 
 var hstoreTests = []struct {

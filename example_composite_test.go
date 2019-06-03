@@ -3,7 +3,7 @@ package pg_test
 import (
 	"fmt"
 
-	"github.com/GiG/pg/orm"
+	"github.com/gig/pg/orm"
 )
 
 type InventoryItem struct {
