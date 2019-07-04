@@ -31,7 +31,8 @@ func newStructTableModel(table *Table) *structTableModel {
 	}
 }
 
-func (m *structTableModel) SetStrct(r interface{}) {
+// UpdateStrct updates the model (strt) - used for mocks (tests)
+func (m *structTableModel) UpdateStrct(r interface{}) {
 	new := reflect.ValueOf(r)
 	cur := reflect.Indirect(m.strct)
 	for i := 0; i < cur.NumField(); i++ {

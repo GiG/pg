@@ -31,6 +31,8 @@ func (db *baseDB) PoolStats() *PoolStats {
 
 type executor = func(c context.Context, model interface{}, query interface{}, params ...interface{}) (Result, error)
 
+// SetExecutor sets custom executor that will be executed instead of requesting postgres
+// Note - the hooks will not be executed
 func (db *baseDB) SetExecutor(exec executor) {
 	db.executor = exec
 }

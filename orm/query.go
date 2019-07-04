@@ -77,7 +77,7 @@ func (q *Query) New() *Query {
 	return cp
 }
 
-// GetDB returns the current db instance
+// GetDB returns the current db instance - used for mocks (tests)
 func (q Query) GetDB() DB {
 	return q.db
 }
