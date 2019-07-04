@@ -181,3 +181,10 @@ func (m *sliceTableModel) setSoftDeleteField() {
 		field.Value(strct).Set(value)
 	}
 }
+
+func (m *sliceTableModel) UpdateSlice(sl []interface{}) {
+	value := m.slice
+	for _, entry := range sl {
+		value.Set(reflect.Append(value, reflect.ValueOf(entry)))
+	}
+}
