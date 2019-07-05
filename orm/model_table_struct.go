@@ -31,6 +31,18 @@ func newStructTableModel(table *Table) *structTableModel {
 	}
 }
 
+// UpdateStrct updates the model (strt) - used for mocks (tests)
+func (m *structTableModel) UpdateStrct(r interface{}) {
+	new := reflect.ValueOf(r)
+	cur := reflect.Indirect(m.strct)
+	for i := 0; i < cur.NumField(); i++ {
+		field := cur.Field(i)
+		if field.IsValid() && field.CanSet() {
+			field.Set(reflect.ValueOf(new.Field(i).Interface()))
+		}
+	}
+}
+
 func newStructTableModelValue(v reflect.Value) *structTableModel {
 	return &structTableModel{
 		table: GetTable(v.Type()),

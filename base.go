@@ -17,6 +17,7 @@ type baseDB struct {
 
 	fmter      orm.Formatter
 	queryHooks []QueryHook
+	executor   executor
 }
 
 // PoolStats contains the stats of a connection pool
@@ -26,6 +27,14 @@ type PoolStats pool.Stats
 func (db *baseDB) PoolStats() *PoolStats {
 	stats := db.pool.Stats()
 	return (*PoolStats)(stats)
+}
+
+type executor = func(c context.Context, model interface{}, query interface{}, params ...interface{}) (Result, error)
+
+// SetExecutor sets custom executor that will be executed instead of requesting postgres
+// Note - the hooks will not be executed
+func (db *baseDB) SetExecutor(exec executor) {
+	db.executor = exec
 }
 
 func (db *baseDB) clone() *baseDB {
@@ -192,6 +201,9 @@ func (db *baseDB) ExecContext(c context.Context, query interface{}, params ...in
 }
 
 func (db *baseDB) exec(c context.Context, query interface{}, params ...interface{}) (Result, error) {
+	if db.executor != nil {
+		return db.executor(c, nil, query, params)
+	}
 	var res Result
 	var lastErr error
 	for attempt := 0; attempt <= db.opt.MaxRetries; attempt++ {
@@ -253,6 +265,9 @@ func (db *baseDB) QueryContext(c context.Context, model, query interface{}, para
 }
 
 func (db *baseDB) query(c context.Context, model, query interface{}, params ...interface{}) (Result, error) {
+	if db.executor != nil {
+		return db.executor(c, model, query, params)
+	}
 	var res Result
 	var lastErr error
 	for attempt := 0; attempt <= db.opt.MaxRetries; attempt++ {

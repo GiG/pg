@@ -77,6 +77,11 @@ func (q *Query) New() *Query {
 	return cp
 }
 
+// GetDB returns the current db instance - used for mocks (tests)
+func (q Query) GetDB() DB {
+	return q.db
+}
+
 // Clone clones the Query.
 func (q *Query) Clone() *Query {
 	var modelValues map[string]*queryParamsAppender

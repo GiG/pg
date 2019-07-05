@@ -181,3 +181,11 @@ func (m *sliceTableModel) setSoftDeleteField() {
 		field.Value(strct).Set(value)
 	}
 }
+
+// UpdateSlice appends to the current slice - used for mocks (tests)
+func (m *sliceTableModel) UpdateSlice(sl []interface{}) {
+	value := m.slice
+	for _, entry := range sl {
+		value.Set(reflect.Append(value, reflect.ValueOf(entry)))
+	}
+}
